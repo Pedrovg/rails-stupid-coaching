@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Stupid Coaching</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1><strong>Stupid Coaching</strong></h1>
+    <div class="card" id="q">
+      <div class="card-body">
+      <p><%= @question %></p>
+      <p><em>-You</em></p>
+      </div>
+    </div>
+    <div class="card" id="a">
+      <div class="card-body">
+      <p><strong><%= @answer %></strong></p>
+      <p><em>-Your coach</em></p>
+      </div>
+    </div>
+    <p id="link"><%= link_to "Ask a new question", "/ask" %></p>
+  </body>
+</html>
